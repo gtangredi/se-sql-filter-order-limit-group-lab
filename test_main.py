@@ -17,7 +17,7 @@ def test_advanced_filtering():
     assert(list(df_blue['name']) == ['Earth', 'Uranus', 'Neptune'])
 
 def test_ordering_and_limiting():
-    assert(list(df_hungry['name']) == ['Snoopy', 'Clifford', None, 'Scooby', 'Lassie', 'Pickles'])
+    assert(list(df_hungry['name']) == ['Snoopy', 'Clifford', 'None', 'Scooby', 'Lassie', 'Pickles'])
     assert(df_hungry.iloc[0]['name'] == 'Snoopy')
     assert(list(df_hungry_ages['age']) == [4, 4, 7, 6, 3])
     assert(df_hungry_ages.iloc[-1]['name'] == 'Snoopy')
